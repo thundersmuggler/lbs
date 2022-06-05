@@ -22,7 +22,9 @@ void gera_codigo (FILE *f, unsigned char code [], funcp *entry) {
 	// lendo o código:
 	atual = fgetc (f);
 	while (atual != EOF) {
-		var = interpretar (atual, code, ); // PAREI AQUI, DÚVIDA SOBRE COMO MODULARIZAR CÓDIGO
+		// se 'f' chamar interpretar_funcao com TODA a string até o END (ou return sei lá)
+		var = interpretar (atual, );
+
 		/*
 		if (atual == 'f') {
 			printf ("função detectada\nmovendo ponteiro do arquivo 8 bytes para frente\n");
